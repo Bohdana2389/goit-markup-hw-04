@@ -183,6 +183,26 @@ ul {
 .button:focus {
   color: var(--title-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.contact-svg{
+  width: 10px;
+  height: 16px;
+  stroke: currentColor;
+  margin-right: 10px;
+}
+
+.contact-item-svg{
+  width: 16px;
+  height: 12px;
+  stroke: currentColor;
+  margin-right: 10px;
+  }
+
+.contact-icon-link{
+  display: flex;
+  align-items: center;
 }
 
 .address {
@@ -236,6 +256,57 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--alt-text-color);
+}
+
+.visually-footer {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+.social-footer{
+  display: flex;
+  align-items: baseline;
+}
+
+.social-icons-footer{
+  display: inline-flex;
+}
+
+.social-icons-item-footer:not(:last-child){
+  margin-right: 10px;
+}
+
+.social-icons-link-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+
+}
+.social-icons-link-footer:hover,
+.social-icons-link-footer:focus {
+  background-color: var(--accent-color);
+}
+
+.social-icons-link-footer:hover .social-icons-svg,
+.social-icons-link-footer:focus .social-icons-svg{
+  fill: var(--title-color);
+}
+
+.social-icons-svg-footer{
+  width: 20px;
+  height: 20px;
+  fill:var(--title-color);
 }
 
 .team-page {
@@ -324,6 +395,28 @@ background-size: cover;
 
 .advantages{
   padding-top: 94px;
+  padding-bottom: 30px;
+}
+
+.advantages-icons{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: var(--second);
+}
+
+.advantages-icons:not(:last-child){
+  margin-right: 30px;
+}
+
+
+.advantages-icons-svg{
+  width: 70px;
+  height: 70px;
+  fill: #AFB1B8;
 }
 
 .section {
@@ -366,16 +459,22 @@ background-size: cover;
   height: 44px;
   border-radius: 50%;
   background-color: var(--title-color);
+
+}
+.social-icons-link:hover,
+.social-icons-link:focus {
+  background-color: var(--accent-color);
 }
 
 .social-icons-link:hover .social-icons-svg,
 .social-icons-link:focus .social-icons-svg{
-  fill: var(--accent-color);
+  fill: var(--title-color);
 }
 
-.social-icon-svg{
+.social-icons-svg{
   width: 20px;
   height: 20px;
+  fill: #AFB1B8;
 }
 
 .photo {
@@ -407,15 +506,19 @@ background-size: cover;
   box-sizing: border-box;
   border-radius: 4px;
 }
+.clients-icons-link:hover ,
+.clients-icons-link:focus {
+  border-color: var(--accent-color);}
 
-.clients-icons-link:hover .social-icons-svg,
-.clients-icons-link:focus .social-icons-svg{
+.clients-icons-link .clients-icons-svg:hover ,
+.clients-icons-link .clients-icons-svg:focus {
   fill: var(--accent-color);
 }
 
-.clients-icon-svg{
+.clients-icons-svg{
   width: 106px;
   height: 60px;
+  fill: #AFB1B8;
 }
 
 .dark-fone {
