@@ -106,8 +106,7 @@ ul {
  
 }
 .menu-item:not(:last-child) {
-  margin-right: 50px;
-  
+  margin-right: 50px; 
 }
 
 .indent{
@@ -260,7 +259,7 @@ ul {
 
 .visually-footer {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   font-family: var(--main-font);
   font-weight: bold;
   font-size: 14px;
@@ -270,13 +269,17 @@ ul {
   color: var(--title-color);
 }
 
-.social-footer{
+.dark-fone .container{
   display: flex;
-  align-items: baseline;
+  align-items: baseline; 
 }
 
 .social-icons-footer{
   display: inline-flex;
+}
+
+.social-footer{
+margin-left: 70px;
 }
 
 .social-icons-item-footer:not(:last-child){
@@ -398,6 +401,7 @@ background-size: cover;
   padding-bottom: 30px;
 }
 
+
 .advantages-icons{
   display: inline-flex;
   align-items: center;
@@ -408,8 +412,8 @@ background-size: cover;
   background-color: var(--second);
 }
 
-.advantages-icons:not(:last-child){
-  margin-right: 30px;
+.advantages-icons{
+  margin-bottom: 30px;
 }
 
 
@@ -561,6 +565,15 @@ background-size: cover;
   margin-right: 30px;
   margin-bottom: 30px;
 }
+.card{
+
+}
+.card:hover,
+.card:focus{
+  display: block;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .dark-logo{
   display: block;
   padding-bottom: 0;
